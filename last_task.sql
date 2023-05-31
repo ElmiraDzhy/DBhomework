@@ -7,7 +7,7 @@
 
 */
 
-SELECT *, concat(first_name, ' ', last_name) AS "Fullname"
+SELECT *, character_length(concat(first_name, last_name)) AS "Fullname"
 FROM workers;
 
 SELECT *

@@ -27,5 +27,5 @@ WHERE extract(years from age(birthday)) BETWEEN 25 AND 30;
 SELECT *
 FROM workers
 WHERE salary > 300
-  AND length(first_name) < 6;
+  OR length(first_name) < 6;
 
